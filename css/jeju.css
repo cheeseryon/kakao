@@ -1,0 +1,124 @@
+@charset "utf-8"; 
+@import url(font.css); 
+
+* {box-sizing:border-box;}
+body {font-family:'Noto Sans KR', serif; color:#333; position:relative; height:100%;}
+.wrap {max-width:100%;}
+.inner {width:85%; margin:0 auto;}
+.textYellow {color:#f1d100;}
+
+header .headerBase {width:100%; height:100px; background-color:#f1d100;}
+header .headerBase .inner {position:relative; margin:0 auto;}
+header h1 {position:absolute; top:0; left:0; width:85px; height:85px; font-weight:bold;}
+header h1 a {line-height:100px; color:#ffffff; height:85px; display:block;}
+header .gnbArea {position:absolute; top:0; right:0; width:30%; height:100px; box-sizing:border-box; text-align:center; color:#ffffff; white-space:nowrap; z-index:1;}
+header .gnbArea .gnbList {position:relative; float:left; width:25%;}
+header .gnbArea .gnbList>a {display:block; line-height:100px; font-size:20px; font-weight:600; letter-spacing:1px;}
+header .gnbArea .gnbList .subList {position:absolute; top:100px; width:100%; height:auto; display:none; border-radius:0 0 3px 3px; background-color:#fff; line-height:2.0; color:#555555; font-size:18px; transition:all .1s;}
+header .gnbArea .gnbList .subList li:hover a {text-shadow:0 0 .1px; color:#444;}
+header .gnbArea .gnbList .subList li a {display:block; height:60px; font-size:17px; font-weight:500; line-height:3;}
+header .gnbArea .gnbList:hover .subList {display:block;}
+/* header END */
+
+
+.mainVisual {position:relative; width:100%; height:1000px;}
+.mainVisual:before {position:absolute; top:0; left:0; content:''; display:block; width:100%; height:65%; background:#f1d100; z-index:-1;}
+.mainVisual:after {position:absolute; top:11%; right:0; content:''; display:block; width:1000px; height:415px; background:url(../img/mainBgText1.png) no-repeat center/cover; opacity:0.3; background-position:var(--bg-position,0);}
+.mainVisual .inner .mainSlogan {position:absolute; top:15%; left:35%; width:600px; height:250px; background:url(../img/mainBg.png) no-repeat center/cover;}
+.mainVisual .inner .mainSlogan .mainText {margin-top:20px; color:#fff; font-size:22px; font-weight:500; line-height:2.1;}
+.mainVisual .inner .mainSlogan .mainText .text_yellow span {position:relative; top:1px; font-size:24px; font-weight:700; margin-right:1px;}
+.mainVisual .inner .blinkArea {position:absolute; top:23%; left:5%; width:20px;}
+.mainVisual .inner .blinkArea p {position:relative; width:40px; height:40px; left:-9px; margin-bottom:15px; background:url(../img/mouseicon.png) no-repeat center/cover;}
+.mainVisual .inner .blinkArea li {width:0; height:0; margin-bottom:15px; border-left:9px solid transparent; border-right:9px solid transparent; border-top:9px solid #fff; transition:all .3s;}
+.mainVisual .inner figure.mainImg {position:absolute; top:44%; left:15%; width:70%; height:38%; overflow:hidden; border-radius:10px; box-shadow:0 0 1px #999; background:url(../img/kakakoMain.jpg) no-repeat center/cover; z-index:1;}
+.mainVisual .inner figure.mainImg img {width:100%; height:400px;}
+/* mainVisual END*/
+
+
+.liveJeju {width:100%; height:700px; margin-bottom:150px; overflow:hidden; background:#f3f3f3;}
+.liveJeju .textArea {position:relative; float:left; width:30%; height:700px; padding:60px 0 0 9%;}
+.liveJeju .textArea .icon {position:absolute; bottom:120px; right:80px; width:90px; height:45px; border:2px solid #555; border-radius:30px; background:url(../img/icon/arrow01.png) no-repeat center 7px; transition:background-color .4s border .4s;}
+.liveJeju .textArea .icon:hover {border:2px solid #f1d100; background: url(../img/icon/arrow01.png) no-repeat center -28px;}
+.liveJeju .swiper {position:relative; top:10%; left:10%; float:left; width:65%; height:80%;}
+.liveJeju .swiper-slide {position:relative; top:1%; left:0; width:100%; height:90%; display:flex; justify-content:center; align-items:center; overflow:hidden; border-radius:10px; text-align:center; font-size:18px; transition:all .7s;}
+.liveJeju .swiper-slide:hover {box-shadow:0 3px 10px #999; translate:0 -1%;}
+.liveJeju .swiper-slide a {position:relative; display:block; z-index:3;}
+.liveJeju .swiper-slide a:after {position:absolute; top:0; left:0; content:''; width:100%; height:100%; display:block; border-radius:10px; background:linear-gradient(tobottom,#999,#000000); opacity:0.4;}
+.liveJeju .swiper-slide a p {position:absolute; bottom:30px; left:40px; text-align:left; font-size:30px; font-weight:700; color:#fff; z-index:1;}
+.liveJeju .swiper-slide a img {display:block; width:408px; height:506px; object-fit:cover;}
+.liveJeju .autoplay-progress {position:absolute; right:16px; bottom:16px; z-index:10; width:48px; height:48px; display:flex; align-items:center; justify-content:center; font-weight:bold; color:var(--swiper-theme-color);}
+.liveJeju .autoplay-progress svg {--progress:0; position:absolute; left:0; top:0; z-index:10; width:100%; height:100%; stroke-width:4px; stroke:var(--swiper-theme-color); fill:none; stroke-dashoffset:calc(125.6*(1-var(--progress))); stroke-dasharray:125.6; transform:rotate(-90deg);}
+/* liveJeju section END */
+
+
+.visitArea {position:relative; height:600px; margin-bottom:150px;}
+.visitArea:after {position:absolute; bottom:15%; left:0; content:''; display:block; border-radius:0 10px 10px 0; width:80%; height:50%; background:url(../img/space02.jfif) no-repeat center/cover; z-index:-1;}
+.visitArea .spaceArea {float:left; width:80%; height:400px; border-radius:10px 0 0 10px; text-align:right;}
+.visitArea .spaceArea h3 {font-size:60px; font-weight:700;}
+.visitArea .spaceArea .sText {margin-top:30px; font-size:24px; font-weight:500;}
+.visitArea .reserveArea {float:right; width:20%; height:600px;}
+.visitArea .reserveArea div {width:100%; height:45%; text-align:center;}
+.visitArea .reserveArea div a {display:inline-block; border-radius:10px;}
+.visitArea .reserveArea div a:hover {background-color:#fffdee;}
+.visitArea .reserveArea div figure {width:120px; height:150px; border:2px solid #999; border-radius:10px; margin:0 auto;}
+.visitArea .reserveArea div figure img {width:50px; height:50px; margin-top:30px; opacity:0.8;}
+.visitArea .reserveArea div figure p {font-size:18px; font-weight:600; margin-top:13px;}
+.visitArea .reserveArea .reserve {padding-top:100px;}
+.visitArea .reserveArea .reserve img {position:relative; top:0; left:6px;}
+/* visitArea END */
+
+
+.withJeju {width:100%; height:800px; background:#f3f3f3; margin:0 auto 150px; padding:150px 0;}
+.withJeju .textArea {position:relative; float:left; width:27%; height:550px; margin:-20px 0 0 2%;}
+.withJeju .textArea a {display:block;}
+.withJeju .textArea .icon {position:absolute; bottom:10px; right:120px; width:90px; height:45px; border:2px solid #555; border-radius:30px; background:url(../img/icon/arrow01.png) no-repeat center 7px;}
+.withJeju .textArea .icon:hover {border:2px solid #f1d100; background: url(../img/icon/arrow01.png) no-repeat center -28px;}
+.withJeju .imgArea {position:relative; top:0; left:-25px; float:right; width:62%; height:550px;}
+.withJeju .imgArea>div.leftBox {position:relative; top:-50px; left:25px; float:left;}
+.withJeju .imgArea>div.rightBox {float:right;}
+.withJeju .imgArea>div>a {display:block;}
+.withJeju .imgArea>div>a figure {position:relative; width:480px; height:250px; margin-bottom:22px; border-radius:10px; overflow:hidden; transition:all .3s;}
+.withJeju .imgArea>div figure:after {position:absolute; top:0; left:0; content:''; display:block; width:100%; height:270px; border-radius:5px; background:#111; opacity:0.3; transition:all .3s;}
+.withJeju .imgArea>div figure Img {position:absolute; top:0; left:0; width:100%; height:270px; transition:transform .5s ease;}
+.withJeju .imgArea>div figure p {position:absolute; top:44%; left:0; width:100%; z-index:1; color:#ebebeb; font-size:26px; font-weight:600; opacity:1; transition:all .5s; text-align:center;}
+.withJeju .imgArea>div a:hover figure {box-shadow:3px 3px 15px #999;}
+.withJeju .imgArea>div a:hover figure:after {opacity:0.1;}
+.withJeju .imgArea>div a:hover figure img {transform:scale(1.03);}
+/* withJeju END */
+
+
+.dataArea {height:400px; margin-bottom:200px;}
+.dataArea .textArea {position:relative; float:left; width:30%; height:400px; margin-left:2%;}
+.dataArea .textArea .title>li {display:block; font-size:60px;}
+.dataArea .textArea .icon {position:absolute; bottom:0; left:45%; width:90px; height:45px; border:2px solid #555; border-radius:30px; background:url(../img/icon/arrow01.png) no-repeat center 7px;}
+.dataArea .textArea .icon:hover { border:2px solid #f1d100; background:url(../img/icon/arrow01.png) no-repeat center -28px;}
+.dataArea .itemList {float:left; width:65%;}
+.dataArea .itemList .dataItem {float:left; width:calc(100%/3 - 50px); height:400px; margin-left:50px; border:2px solid #dbdbdb; border-radius:10px; background:#fffdee; transition:all .3s; padding:30px 40px;}
+.dataArea .itemList .dataItem:hover {background:#fff;}
+.dataArea .itemList .dataItem h4 {height:120px; font-size:24px; margin-bottom:30px;}
+.dataArea .itemList .dataItem p {width:100%; height:130px; margin-bottom:30px; display:0; word-wrap:break-word; -webkit-line-clamp:4; -webkit-box-orient:vertical; overflow:hidden; text-overflow:ellipsis; font-size:20px; line-height:1.7;}
+.dataArea .itemList .dataItem span {height:50px; font-size:16px; color:#333;}
+/* dataArea END */
+
+
+footer {height:200px; color:#666;}
+footer > div {position:relative; float:left; height:100%; background:rgb(243,243,243);}
+footer > div .box {position:absolute; top:50%; left:50%; transform:translate(-50%,-50%);}
+footer .leftArea {width:45%;}
+footer .leftArea p {font-size:24px; font-weight:700;}
+footer .centerArea {width:10%;}
+footer .centerArea .box {width:100%;}
+footer .centerArea p {float:left; width:40px; height:40px; border-radius:50%; margin:0 5px;}
+footer .centerArea p.kakao {background:url(../img/icon/Kakaobefore1.jpg) no-repeat center/cover; transition:all .2s;}
+footer .centerArea p.kakao:hover {background:url(../img/icon/kakaoafter.jpg) no-repeat center/cover;}
+footer .centerArea p.insta {background:url(../img/icon/instabefore.png) no-repeat center/cover; transition:all .2s;}
+footer .centerArea p.insta:hover {background:url(../img/icon/instaafter.png) no-repeat center/cover;}
+footer .rightArea {width:45%;}
+footer .rightArea p {font-size:18px;}
+footer .rightArea p span {display:inline-block; font-weight:600; margin:10px 5px 0 0;}
+/* footer END */
+
+
+.textCommon .title li {color:#333; font-size:70px; font-weight:700; display:inline-block;}
+.textCommon .title li.textYellow {color:#f1d100; margin-right:2px;}
+.textCommon .sub {margin-top:40px; font-size:34px; font-weight:500;}
