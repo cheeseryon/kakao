@@ -23,7 +23,7 @@ header .gnbArea .gnbList:hover .subList {display:block;}
 
 .mainVisual {position:relative; width:100%; height:1000px;}
 .mainVisual:before {position:absolute; top:0; left:0; content:''; display:block; width:100%; height:65%; background:#f1d100; z-index:-1;}
-.mainVisual:after {position:absolute; top:11%; right:0; content:''; display:block; width:1000px; height:415px; background:url(../img/mainBgText1.png) no-repeat center/cover; opacity:0.3; background-position:var(--bg-position,0);}
+.mainVisual:after {position:absolute; top:11%; right:0; content:''; display:block; width:1000px; height:415px; background:url(../img/mainBgText.png) no-repeat center/cover; opacity:0.3; background-position:var(--bg-position,0);}
 .mainVisual .inner .mainSlogan {position:absolute; top:15%; left:35%; width:600px; height:250px; background:url(../img/mainBg.png) no-repeat center/cover;}
 .mainVisual .inner .mainSlogan .mainText {margin-top:20px; color:#fff; font-size:22px; font-weight:500; line-height:2.1;}
 .mainVisual .inner .mainSlogan .mainText .text_yellow span {position:relative; top:1px; font-size:24px; font-weight:700; margin-right:1px;}
