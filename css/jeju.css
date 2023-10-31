@@ -110,7 +110,7 @@ footer .centerArea {width:10%;}
 footer .centerArea .box {width:100%;}
 footer .centerArea p {float:left; width:40px; height:40px; border-radius:50%; margin:0 5px;}
 footer .centerArea p.kakao {background:url(../img/icon/Kakaobefore1.jpg) no-repeat center/cover; transition:all .2s;}
-footer .centerArea p.kakao:hover {background:url(../img/icon/kakaoafter.jpg) no-repeat center/cover;}
+footer .centerArea p.kakao:hover {background:url(../img/icon/Kakao_after.jpg) no-repeat center/cover;}
 footer .centerArea p.insta {background:url(../img/icon/instabefore.png) no-repeat center/cover; transition:all .2s;}
 footer .centerArea p.insta:hover {background:url(../img/icon/instaafter.png) no-repeat center/cover;}
 footer .rightArea {width:45%;}
